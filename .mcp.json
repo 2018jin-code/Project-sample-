@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@0.0.85",
+        "--headless",
+        "--no-sandbox",
+        "--isolated",
+        "--executable-path",
+        "/opt/pw-browsers/chromium",
+        "--proxy-server",
+        "${HTTPS_PROXY}",
+        "--proxy-bypass",
+        "127.0.0.1,localhost"
+      ]
+    }
+  }
+}
